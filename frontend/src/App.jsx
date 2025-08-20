@@ -25,8 +25,9 @@ function App() {
   }, []);
 
   return (
+     <div style={{ backgroundColor: "lightpink", minHeight: "100vh" }}>
     <div className="container mt-5">
-      <h2 className="text-center mb-4">🌦 Live Weather Dashboard</h2>
+      <h2 className="text-center mb-4">Live Weather Dashboard</h2>
       <div className="d-flex justify-content-center">
         {loading ? (
           <div className="spinner-border text-primary" role="status">
@@ -46,6 +47,7 @@ function App() {
         )}
       </div>
     </div>
+ </div>
   );
 }
 
